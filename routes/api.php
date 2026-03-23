@@ -37,7 +37,7 @@ Route::get('/vacancies/{id}', function ($id) {
     $vacancies = [
         1 => [
             'id' => 1,
-            'title' => 'Pythoasdn Developer',
+            'title' => 'Pythoasasddn Developer',
             'company' => 'Google',
             'city' => 'Москва',
             'salary_from' => 200000,
