@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html {
+        @apply antialiased;
+    }
+    body {
+        @apply min-h-screen text-zinc-100;
+        background-color: #111215;
+        background-image:
+            radial-gradient(ellipse 78% 42% at 50% -22%, rgba(244, 114, 182, 0.16), transparent 62%),
+            radial-gradient(circle at 50% 130%, rgba(0, 0, 0, 0.4), transparent 45%);
+    }
+}
+
+@layer utilities {
+    .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+
+    .no-scrollbar::-webkit-scrollbar {
+        display: none;
+    }
+
+    .x-scrollbar::-webkit-scrollbar {
+        height: 10px;
+    }
+
+    .x-scrollbar::-webkit-scrollbar-track {
+        background: rgba(36, 39, 46, 0.9);
+    }
+
+    .x-scrollbar::-webkit-scrollbar-thumb {
+        background: rgba(244, 114, 182, 0.5);
+        border-radius: 9999px;
+    }
+}
